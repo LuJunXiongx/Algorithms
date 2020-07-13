@@ -36,7 +36,8 @@ public class SortCompare {
         list.toArray(a);
 
         //4.调用测试代码完成测试
-        testInsertion(a);
+        //testInsertion(a);
+        testShell(a);
 
     }
 
