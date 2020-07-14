@@ -1,6 +1,7 @@
 package com.lujunxiong.test;
 
 import com.lujunxiong.sort.Insertion;
+import com.lujunxiong.sort.Merge;
 import com.lujunxiong.sort.Shell;
 
 import java.io.BufferedReader;
@@ -37,7 +38,8 @@ public class SortCompare {
 
         //4.调用测试代码完成测试
         //testInsertion(a);
-        testShell(a);
+        //testShell(a);//24ms
+        testMerge(a);
 
     }
 
@@ -62,5 +64,16 @@ public class SortCompare {
         long end = System.currentTimeMillis();
         //4.算出程序执行的时间并输出
         System.out.println("插入排序执行的时间为："+(end-start)+"毫秒");
+    }
+    //测试归并排序
+    public static void testMerge(Integer[] a){
+        //1.获取执行之前的时间
+        long start = System.currentTimeMillis();
+        //2.执行算法代码
+        Merge.sort(a);
+        //3.获取执行之后的时间
+        long end = System.currentTimeMillis();
+        //4.算出程序执行的时间并输出
+        System.out.println("归并排序执行的时间为："+(end-start)+"毫秒");
     }
 }
