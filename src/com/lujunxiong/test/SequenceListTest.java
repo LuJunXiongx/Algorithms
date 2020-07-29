@@ -15,7 +15,11 @@ public class SequenceListTest {
         s1.insert("姚明");
         s1.insert("科比");
         s1.insert("麦迪");
+        s1.insert("66");
+        s1.insert("77");
         s1.insert(1,"詹姆斯");
+        s1.insert(3,"张三");
+
 
         for (String s : s1) {
             System.out.println(s);
@@ -24,8 +28,10 @@ public class SequenceListTest {
         System.out.println("---------------------------------");
 
         //测试获取
-        String getResult = s1.get(1);
-        System.out.println("getResult = " + getResult);
+        String getResult1 = s1.get(1);
+        System.out.println("getResult1 = " + getResult1);
+        String getResult2 = s1.get(2);
+        System.out.println("getResult2 = " + getResult2);
 
         //测试删除
         String removeResult = s1.remove(0);
