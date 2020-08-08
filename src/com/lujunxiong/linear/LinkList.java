@@ -182,13 +182,13 @@ public class LinkList<T> implements Iterable<T> {
 
     @Override
     public Iterator<T> iterator() {
-        return new LIterator();
+        return new LlIterator();
     }
 
-    private class LIterator implements Iterator {
+    private class LlIterator implements Iterator {
         private Node n;
 
-        public LIterator() {
+        public LlIterator() {
             this.n = head;
         }
 
