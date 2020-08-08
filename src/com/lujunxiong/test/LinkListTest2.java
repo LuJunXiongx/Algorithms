@@ -8,8 +8,11 @@ import com.lujunxiong.linear.LinkList;
  * @Date 2020/7/30
  * @Description: 单向链表测试
  **/
-public class LinkListTest {
+public class LinkListTest2 {
     public static void main(String[] args) {
+        /**
+         * 测试单向链表对象
+         */
         LinkList<String> s1 = new LinkList<>();
 
         /**
@@ -29,19 +32,13 @@ public class LinkListTest {
         }
 
         System.out.println("---------------------------------");
+        System.out.println("链表反转：");
+        s1.reverse();
+        for (String s: s1) {
+            System.out.println(s);
 
-        //测试获取
-        String getResult1 = s1.get(1);
-        System.out.println("getResult1 = " + getResult1);
-        String getResult2 = s1.get(2);
-        System.out.println("getResult2 = " + getResult2);
+        }
 
-        //测试删除
-        String removeResult = s1.remove(0);
-        System.out.println("removeResult = " + removeResult);
-        //测试清空
-        s1.clear();
-        System.out.println("清空后的元素个数为：" + s1.length());
     }
 
 

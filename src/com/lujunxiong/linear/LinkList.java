@@ -222,10 +222,11 @@ public class LinkList<T> implements Iterable<T> {
     /**
      * 反转指定的结点curr，并把反转后的结点返回
      *
-     * @param curr
+     * @param curr 当前遍历的结点
      * @return
      */
     public Node reverse(Node curr) {
+        //如果是最后一个结点，把头结点指向尾结点
         if (curr.next == null) {
             head.next = curr;
             return curr;
